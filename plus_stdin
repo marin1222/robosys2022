@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2022 Yasuda Marin
+# SPDX-License-Identifier: GPL-3.0
+
 import sys
 
 ans = 0.0
