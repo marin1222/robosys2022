@@ -1,5 +1,5 @@
 #!/bin/bash -xv
-# SPDX-FileCopyrightText: 2022 Ryuichi Ueda
+# SPDX-FileCopyrightText: 2022 Marin Yasuda
 # SPDX-License-Identifier: BSD-3-Clause
 
 ng () {
@@ -18,10 +18,10 @@ ng () {
 	    [ "$?" = 1 ]      || ng ${LINENO}
 	    [ "${out}" = "" ] || ng ${LINENO}
 
-	    out=$(echo | ./plus_stdin) #空文字
+	    out=$(echo | ./plus_stdin) 
 	    [ "$?" = 1 ]      || ng ${LINENO}
 	    [ "${out}" = "" ] || ng ${LINENO}
 		      　 
 
-	    [ "$res" = 0 ] && echo OK        # &&（AND記号）は左側が成功すると右側を実行
+	    [ "$res" = 0 ] && echo OK
 	    exit $res
