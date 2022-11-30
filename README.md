@@ -9,7 +9,7 @@
 git clone https://github.com/marin1222/robosys2022.git
 cd robosys2022
 ```
-##入出力例
+## 入出力例
 ```bash
 $ seq 5 | ./plus
 15.0
