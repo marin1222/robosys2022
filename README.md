@@ -3,6 +3,11 @@
 
 標準入力から読み込んだ数字を足す。
 
+## ダウンロード
+このコマンドを入力して下さい。
+git clone https://github.com/marin1222/robosys2022.git
+cd robosys2022
+
 ## 必要なソフトウェア
 * Python3
   * テスト済み: 3.7～3.10
