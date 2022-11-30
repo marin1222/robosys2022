@@ -11,14 +11,14 @@ ng () {
 	    
 	    ### I/O TEST ###
 	    out=$(seq 5 | ./plus_stdin)
-	    [ "${out}" = 15 ] || ng ${LINENO}
+	    [ "${out}" = 15.0 ] || ng ${LINENO}
 	   
 	    ### STRANGE INPUT ###
 	    out=$(echo あ | ./plus_stdin)
 	    [ "$?" = 1 ]      || ng ${LINENO}
 	    [ "${out}" = "" ] || ng ${LINENO}
 
-	    out=$(echo | ./plus) #空文字
+	    out=$(echo | ./plus_stdin) #空文字
 	    [ "$?" = 1 ]      || ng ${LINENO}
 	    [ "${out}" = "" ] || ng ${LINENO}
 		      　 
